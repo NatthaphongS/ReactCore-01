@@ -5,7 +5,8 @@
 }
 
 html {
-    font-size: 62.5%; // root 16px * 0.625 == 10px
+    font-size: 62.5%; 
+    /* // root 16px * 0.625 == 10px */
 }
 
 body {
@@ -36,18 +37,56 @@ h1 {
     color: blue;
 }
 
-.avatar {
+/* .avatar {
     margin-left: -50px;
     cursor: pointer;
-}
+} */
 .avatar__image--container {
     width: 150px;
     height: 150px;
 }
 
-.avatar__image {
+/* .avatar__image {
     width: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
     border: solid 4px white;
+} */
+
+/* CSS specificity ==ประเมินความสำคัญของกฏ css ตาม selector */
+/* SP : 0,1,0,0 */
+/* #pic {
+    background-color: #023925;
+} */
+/* SP : 0,0,1,0 */
+.avatar{
+    /* normal setting for image container */
+    width: 200px;
+    /* heigth: 200px */
+    aspect-ratio: 1/1; 
+    /* ใช้ control height ในอัตราส่วนขนารูปภาพต่างๆ 1/1,16/9*/
+    background-color: skyblue;
+    border-radius: 50%;
+    overflow: hidden;
+
+    /* bad practice */
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: -15%;
+}
+/* ถ้า SP เท่ากัน จะดูตาม order */
+/* SP : 0,0,1,1 */
+/* .avatar > img{} */
+
+/* สิ่งนี้เป็นปัญหาเวลาที่จะต้องมาดีบัคเพระาหาจุดยาก ซึ่งจะแก้ปัญหาโดยArya
+Nerd
+ใช้ class ทั้งหมด แล้วให้ตั่งชท่อเฉพาะเจาะจงแบบการตั่งชื่อแบบ BEM */
+/* Block : avatar */
+/* Element : image */
+/* Modifier : null */
+.avatar_image{
+    width: 150%;
+    height: auto;
+    object-fit: contain;
 }

@@ -5,7 +5,8 @@
 }
 
 html {
-    font-size: 62.5%; // root 16px * 0.625 == 10px
+    font-size: 62.5%; 
+    /* // root 16px * 0.625 == 10px */
 }
 
 body {
@@ -34,4 +35,19 @@ h1 {
 
 .text-blue {
     color: blue;
+}
+.postcard{
+    width: 80%;
+    padding: 5px;
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+.postcard >p{
+    font-size: 3vw;
+}
+.postcard >h3{
+    font-size: 8vw;
 }

@@ -5,7 +5,8 @@
 }
 
 html {
-    font-size: 62.5%; // root 16px * 0.625 == 10px
+    font-size: 62.5%; 
+    /* // root 16px * 0.625 == 10px */
 }
 
 body {
@@ -35,3 +36,30 @@ h1 {
 .text-blue {
     color: blue;
 }
+.form{
+    padding: 30px 10px;
+}
+.form_input,.form_submit{
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+.todolist{
+    width: 400px;
+}
+.todolist_task{
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 5px;
+}
+.todolist_task_info{
+    padding: 0px 20px;
+}
+.todolist_task_btn{
+    padding: 0px 20px;
+    font-size: 25px;
+}
+

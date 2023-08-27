@@ -7,10 +7,26 @@
 }
 
 html {
-    font-size: 62.5%; // root 16px * 0.625 == 10px
+    font-size: 62.5%; 
+    /* // root 16px * 0.625 == 10px */
 }
 
 body {
     height: 100vh;
     font-family: 'poppins', sans-serif;
+}
+
+/* ########################################### */
+.search-bar>input{
+    background: url(./search.png) no-repeat ;
+    background-size: 1.2em;
+    background-position: 270px ;
+    padding: 10px;
+    width: 311px;
+    font-size: 25px;
+    border: 1px solid rgb(195, 196, 196);
+    border-radius: 10px;
+}
+.search-bar>input:focus{
+    background: none;
 }

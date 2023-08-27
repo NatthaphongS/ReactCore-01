@@ -1,5 +1,31 @@
+// From 7
+
 // #1 React : CreateElement
+function makeLiTag(detail) {
+  let aTag = React.createElement(
+    "a",
+    { href: "#", className: "nav_menu_link" },
+    detail
+  );
+
+  return React.createElement("li", { className: "nav_menu_item" }, aTag);
+}
+const account = makeLiTag("account");
+const about = makeLiTag("about");
+const service = makeLiTag("service");
+const contact = makeLiTag("contact");
+const ul = React.createElement(
+  "ul",
+  { className: "nav_menu_list" },
+  account,
+  about,
+  service,
+  contact
+);
 
 // #2 ReactDOM : createRoot
+const domRoot = document.getElementById("root");
+const root = ReactDOM.createRoot(domRoot);
 
 // #3 ReactDOM : TakeOver for Render Task
+root.render(ul);

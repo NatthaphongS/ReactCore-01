@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
@@ -7,10 +8,72 @@
 }
 
 html {
-    font-size: 62.5%; // root 16px * 0.625 == 10px
+    font-size: 62.5%;
 }
 
 body {
     height: 100vh;
     font-family: 'urbanist', sans-serif;
 }
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.hero-img{
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+}
+.hero-img > img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.right{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.header{
+    padding: 10px;
+    color: #29005F;
+    font-size: 35px;
+    font-weight: 700;
+    width: 800px;
+}
+.info{
+    padding: 20px 10px 10px 10px;
+    font-size: 25px;
+    width: 550px;
+}
+.input{
+    width: 100%;
+    display: flex;
+    padding: 20px 10px 10px 10px;
+}
+input{
+    font-size: 40px;
+    padding: 10px;
+    border: 1.5px solid #818181;
+    border-radius: 5px;
+    margin: 3px;
+    color: #a5a4a4;
+}
+button{
+    font-size: 30px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 3px;
+    background-color: #29005F;
+    color: #fff;
+}
+
+
