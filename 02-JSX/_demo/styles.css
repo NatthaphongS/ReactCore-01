@@ -5,14 +5,14 @@
 }
 
 html {
-    font-size: 62.5%; // root 16px * 0.625 == 10px
+    font-size: 62.5%; 
 }
 
 body {
     font-size: 4rem;
 }
 
-h1 {
+h1,h4 {
     font-size: 4rem;
     text-align: center;
     margin: 3rem 0;
@@ -25,4 +25,8 @@ h1 {
 
 .text-blue {
     color: blue;
+}
+
+.header{
+    color: orange;
 }

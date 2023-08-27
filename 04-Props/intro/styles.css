@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+    /* // root 16px * 0.625 == 10px */
+}
+
+body {
+    font-size: 4rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    height: 100vh;
+}
+
+.card {
+    width: 1090px;
+    height: 254px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    padding: 40px;
+    font-size: 2rem;
+    margin: 15px;
+}
+p {
+    font-family: 'San-serif';
+}
+
+.red{
+    color: red;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: skyblue;
+}
+.btn-black{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}

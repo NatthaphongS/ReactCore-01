@@ -7,10 +7,27 @@
 }
 
 html {
-    font-size: 62.5%; // root 16px * 0.625 == 10px
+    font-size: 62.5%; 
+    /* // root 16px * 0.625 == 10px */
 }
 
+/* ######################################### */
 body {
     height: 100vh;
     font-family: 'poppins', sans-serif;
+}
+.getintouch{
+    margin: auto;
+    width: 644px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.getintouch>p{
+    text-align: center;
+    font-size: 16px;
+}
+.getintouch>h1{
+    font-size: 36px;
 }

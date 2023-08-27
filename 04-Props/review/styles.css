@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // root 16px * 0.625 == 10px
+}
+
+body {
+    font-size: 4rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 3rem 0;
+    /* color: red; */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    height: 100vh;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: blue;
+}
+
+/* .avatar {
+    margin-left: -50px;
+    cursor: pointer;
+}
+.avatar__image--container {
+    width: 150px;
+    height: 150px;
+}
+.avatar__image {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: solid 4px white;
+} */
+
+/* CSS-Specificity == ประเมิณ Priority ของ CSS Rule จาก Selector */
+
+/* SP : 0,0,0,2 */
+/* div > img {
+    background-color: black;
+} */
+
+/* SP : 0,1,0,0 */
+/* #pic {
+    background-color: red;
+} */
+
+/* SP : 0,0,1,1 */
+/* .avatar > img {} */
+
+/* SP : 0,0,1,0 */
+
+/* BEM */
+/* Block : avatar */
+/* Element: image */
+/* Modifier : null */
+
+/* block__image--modifier */
+
+/* SP : 0,0,1,0 */
+.avatar {
+    width: 200px;
+    /* height: 200px; */
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+
+    /* Optional*/
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: -70px;
+}
+
+.avatar__image {
+    width: 150%;
+    height: auto;
+    object-fit: contain;
+}
+
